@@ -2,3 +2,7 @@ baseURL = 'https://gpr3211.github.io/'
 languageCode = 'en-us'
 title = "Gopher's Cove"
 theme='risotto'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
