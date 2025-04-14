@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Gopher&#39;s Cove</title>
-    <link>https://gpr3211.github.io/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Gopher&#39;s Cove</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gpr3211.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiple Language Support for ebitenengine in Go.</title>
-      <link>https://gpr3211.github.io/post/first/</link>
+      <link>http://localhost:1313/post/first/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/post/first/</guid>
+      <guid>http://localhost:1313/post/first/</guid>
       <description>&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go !&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You will need Go installed and some pre-requisites for ebitenengine.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You can find the full instructions &lt;a href=&#34;https://ebitengine.org/en/documents/install.html&#34;&gt;here&lt;/a&gt;&#xA;I suggest you make sure you have the example shown there running first. This will be the base for our tutorial.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Perm debug log for ebiten&#39;s debugui</title>
+      <link>http://localhost:1313/post/perm-log/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/perm-log/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

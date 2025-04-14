@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debug on Gopher&#39;s Cove</title>
+    <link>http://localhost:1313/tags/debug/</link>
+    <description>Recent content in Debug on Gopher&#39;s Cove</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/debug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perm debug log for ebiten&#39;s debugui</title>
+      <link>http://localhost:1313/post/perm-log/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/perm-log/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
