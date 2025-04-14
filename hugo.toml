@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://gpr3211.github.io/'
 languageCode = 'en-us'
 title = "Gopher's Cove"
 theme='risotto'
