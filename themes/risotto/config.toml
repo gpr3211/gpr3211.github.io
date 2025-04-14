@@ -19,6 +19,8 @@ sectionPagesMenu = "main"
 [params]
 noindex = false
 
+# themes at public/css/palettes
+# e>phttps://github.com/monicfenga/base16-styles/tree/master/css
 [params.theme]
 palette = "base16-dark"
 
@@ -51,9 +53,9 @@ logo = "images/rice.svg"
 [menu]
 
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
+    identifier = "post"
+    name = "Post"
+    url = "/post/"
   weight = 10
 
 [taxonomies]

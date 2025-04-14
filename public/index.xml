@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gopher&#39;s Cove</title>
+    <title>Welcome to Gopher&#39;s Cove on Gopher&#39;s Cove</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Gopher&#39;s Cove</description>
+    <description>Recent content in Welcome to Gopher&#39;s Cove on Gopher&#39;s Cove</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/post/first/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/first/</guid>
-      <description></description>
+      <description>Intro This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go ! Requirements You will need Go installed and some pre-requisites for ebitenengine. You can find the full instructions here I suggest you make sure you have the example shown there running first. This will be the base for our tutorial.</description>
     </item>
   </channel>
 </rss>
