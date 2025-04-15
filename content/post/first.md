@@ -24,7 +24,10 @@ draft = false
 +++
 # Intro
 
- 1. This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go !
+  * This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go !
+<!--more-->
+# COMING SOON
+
 
 ## Requirements
    - You will need Go installed and some pre-requisites for ebitenengine.

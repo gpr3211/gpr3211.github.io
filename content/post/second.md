@@ -21,3 +21,9 @@ toc = true
 draft = false
 +++
 
+# Summary
+ *  In this post I will explore how to extend the ebiten debugio to keep a dev log inside ur devgui.
+
+<!--more-->
+
+# COMING SOON
