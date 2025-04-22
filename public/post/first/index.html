@@ -47,10 +47,11 @@
         <h1>Multiple Language Support for ebitenengine in Go.</h1>
     </header>
     <div class="content__body">
-        <h1 id="intro">Intro</h1>
-<ol>
+        <h1 id="summary">Summary</h1>
+<ul>
 <li>This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go !</li>
-</ol>
+</ul>
+<h1 id="coming-soon">COMING SOON</h1>
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li>You will need Go installed and some pre-requisites for ebitenengine.</li>
@@ -59,7 +60,19 @@
 <li>You can find the full instructions <a href="https://ebitengine.org/en/documents/install.html">here</a>
 I suggest you make sure you have the example shown there running first. This will be the base for our tutorial.</li>
 </ul>
-
+<h1 id="intro">Intro</h1>
+<pre><code>First we have to load our .ttf font. We will the &quot;embed&quot; stdlib package to emded our font at compile time.
+Then we will create a text abstraction that we can use thruout our game. The final step will be to add the multiple languages map.
+</code></pre>
+<h1 id="1-font">1 Font.</h1>
+<h2 id="req">Req.</h2>
+<ul>
+<li>You will need to download a .ttf font file. Since this tutorial is about translations you will have to pick one that supports a wide range of languages. I will be using <a href="https://www.fontsquirrel.com/fonts/dejavu-sans">Deja Vu Sans</a> for the tutorial.</li>
+</ul>
+<h3 id="embed-and-load">Embed and load.</h3>
+<ol>
+<li>This will be our intro to the &ldquo;embed&rdquo; package.</li>
+</ol>
     </div>
     <footer class="content__footer"></footer>
 
@@ -68,7 +81,7 @@ I suggest you make sure you have the example shown there running first. This wil
             <section class="page__aside">
                 <div class="aside__about">
 <div class="aside__about">
-    <img class="about__logo" src="https://gpr3211.github.io/images/rice.svg" alt="Logo">
+    
 <h1 class="about__title">Fly&#39;s Ramblings</h1>
 <p class="about__description">Mostly just random stuff about Go. Hope you enjoy.</p>
 </div>
@@ -94,6 +107,14 @@ I suggest you make sure you have the example shown there running first. This wil
 	    <nav id="TableOfContents">
   <ul>
     <li><a href="#requirements">Requirements</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#req">Req.</a>
+      <ul>
+        <li><a href="#embed-and-load">Embed and load.</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     
