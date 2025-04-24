@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Gopher&#39;s Cove</title>
-    <link>https://gpr3211.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Gopher&#39;s Cove</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gpr3211.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Channels</title>
-      <link>https://gpr3211.github.io/tags/channels/</link>
+      <link>http://localhost:1313/tags/channels/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/channels/</guid>
+      <guid>http://localhost:1313/tags/channels/</guid>
       <description></description>
     </item>
     <item>
       <title>Debug</title>
-      <link>https://gpr3211.github.io/tags/debug/</link>
+      <link>http://localhost:1313/tags/debug/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/debug/</guid>
+      <guid>http://localhost:1313/tags/debug/</guid>
       <description></description>
     </item>
     <item>
       <title>Ebiten</title>
-      <link>https://gpr3211.github.io/tags/ebiten/</link>
+      <link>http://localhost:1313/tags/ebiten/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/ebiten/</guid>
+      <guid>http://localhost:1313/tags/ebiten/</guid>
       <description></description>
     </item>
     <item>
       <title>Fonts</title>
-      <link>https://gpr3211.github.io/tags/fonts/</link>
+      <link>http://localhost:1313/tags/fonts/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/fonts/</guid>
+      <guid>http://localhost:1313/tags/fonts/</guid>
       <description></description>
     </item>
     <item>
       <title>Index</title>
-      <link>https://gpr3211.github.io/tags/index/</link>
+      <link>http://localhost:1313/tags/index/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/index/</guid>
+      <guid>http://localhost:1313/tags/index/</guid>
       <description></description>
     </item>
     <item>
       <title>Maps</title>
-      <link>https://gpr3211.github.io/tags/maps/</link>
+      <link>http://localhost:1313/tags/maps/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/maps/</guid>
+      <guid>http://localhost:1313/tags/maps/</guid>
       <description></description>
     </item>
     <item>
       <title>Text</title>
-      <link>https://gpr3211.github.io/tags/text/</link>
+      <link>http://localhost:1313/tags/text/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/text/</guid>
+      <guid>http://localhost:1313/tags/text/</guid>
       <description></description>
     </item>
     <item>
       <title>Translations</title>
-      <link>https://gpr3211.github.io/tags/translations/</link>
+      <link>http://localhost:1313/tags/translations/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/tags/translations/</guid>
+      <guid>http://localhost:1313/tags/translations/</guid>
       <description></description>
     </item>
   </channel>

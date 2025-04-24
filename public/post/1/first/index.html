@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<link rel="stylesheet" href="http://localhost:1313/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/css/palettes/tokyo-night-dark.css">
 <link rel="stylesheet" href="http://localhost:1313/css/risotto.css">
 <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
 
@@ -65,9 +65,9 @@ I suggest you make sure you have the example shown there running first. This wil
 <li>First we have to load our .ttf font. We will the &ldquo;embed&rdquo; stdlib package to emded our font at compile time.
 Then we will create a text abstraction that we can plug in windows/buttos w/e. The final step will be to add the multiple languages map.</li>
 </ul>
-<h2 id="01-font">0.1 Font.</h2>
+<h2 id="01-font">0.1 Font</h2>
 <ul>
-<li>You will need to download a .ttf font file. Since this tutorial is about translations you will have to pick one that supports a wide range of languages. I will be using <a href="https://www.fontsquirrel.com/fonts/dejavu-sans">Deja Vu Sans</a> for the tutorial.</li>
+<li>You will need to download a .ttf font file. Since this tutorial is about translations you will have to pick one that supports a wide range of languages. I will be using <a href="https://www.fontsquirrel.com/fonts/dejavu-sans">Deja Vu Sans</a> and <a href="https://www.dafont.com/thaleahfat.font">Thaleah Fat</a>for the tutorial.</li>
 </ul>
 <h3 id="embed-and-load">Embed and load.</h3>
 <ol>
@@ -77,7 +77,7 @@ Then we will create a text abstraction that we can plug in windows/buttos w/e. T
 </span></span><span style="display:flex;"><span>cd ui
 </span></span><span style="display:flex;"><span>mkdir assets
 </span></span></code></pre></div><ol start="2">
-<li>Move the .ttf file inside assets folder and create a text.go file in ui dir.</li>
+<li>Move the .ttf files inside assets folder and create a text.go and font.go file in ui dir.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.
 </span></span><span style="display:flex;"><span>├── go.mod
@@ -85,10 +85,12 @@ Then we will create a text abstraction that we can plug in windows/buttos w/e. T
 </span></span><span style="display:flex;"><span>├── main.go
 </span></span><span style="display:flex;"><span>└── ui
 </span></span><span style="display:flex;"><span>    ├── assets
-</span></span><span style="display:flex;"><span>    │   └── DejaVuSans.ttf
+</span></span><span style="display:flex;"><span>    │   ├── DejaVuSans.ttf
+</span></span><span style="display:flex;"><span>    │   └── ThaleahFat.ttf
+</span></span><span style="display:flex;"><span>    ├── font.go
 </span></span><span style="display:flex;"><span>    └── text.go
 </span></span></code></pre></div><ol start="3">
-<li>Open ui/text.go using your weapon of choice and add the following:</li>
+<li>Open ui/font.go using your weapon of choice and add the following:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">ui</span>
 </span></span><span style="display:flex;"><span>
@@ -102,7 +104,10 @@ Then we will create a text abstraction that we can plug in windows/buttos w/e. T
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">fontAssets</span> <span style="color:#a6e22e">embed</span>.<span style="color:#a6e22e">FS</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">DejaVuSans</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">GoTextFaceSource</span>
-</span></span></code></pre></div><ul>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ThaleahFat</span>  <span style="color:#f92672">*</span><span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">GoTextFaceSource</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">currFont</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">GoTextFaceSouce</span> <span style="color:#75715e">// we use this to set font inside our future text.Draw method
+</span></span></span></code></pre></div><ul>
 <li>note the fontAssets var MUST be declared on the following line after //go:embed</li>
 </ul>
 <ol start="4">
@@ -132,8 +137,31 @@ Then we will create a text abstraction that we can plug in windows/buttos w/e. T
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">s</span>, <span style="color:#66d9ef">nil</span>
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Next add the init function where we set currFont and the fonts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">init</span>() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Loading fonts&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">tf</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">LoadFont</span>(<span style="color:#e6db74">&#34;ThaleahFat&#34;</span>, <span style="color:#a6e22e">fontAssets</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Failed to load font&#34;</span>)
+</span></span><span style="display:flex;"><span>		panic(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">dj</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">LoadFont</span>(<span style="color:#e6db74">&#34;DejaVuSans&#34;</span>, <span style="color:#a6e22e">fontAssets</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Failed to load font&#34;</span>)
+</span></span><span style="display:flex;"><span>		panic(<span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ThaleahFat</span> = <span style="color:#a6e22e">tf</span> 
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">DejaVuSans</span> = <span style="color:#a6e22e">dj</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">currFont</span> = <span style="color:#a6e22e">ThaleahFat</span> <span style="color:#75715e">// set the font to be used later.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Font loaded&#34;</span>)
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>As you can see there is nothing fancy going on.
 This function will be called by an init() and errors will be handled there.</p>
+<p><img src="https://raw.githubusercontent.com/gpr3211/gpr3211.github.io/refs/heads/debuglog/content/post/1/tutorial.jpg" alt="Owl"></p>
+<h2 id="02-text">0.2 Text</h2>
     </div>
     <footer class="content__footer"></footer>
 
@@ -171,11 +199,12 @@ This function will be called by an init() and errors will be handled there.</p>
   </ul>
 
   <ul>
-    <li><a href="#01-font">0.1 Font.</a>
+    <li><a href="#01-font">0.1 Font</a>
       <ul>
         <li><a href="#embed-and-load">Embed and load.</a></li>
       </ul>
     </li>
+    <li><a href="#02-text">0.2 Text</a></li>
   </ul>
 </nav>
     

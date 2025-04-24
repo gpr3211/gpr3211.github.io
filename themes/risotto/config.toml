@@ -22,7 +22,7 @@ noindex = false
 # themes at public/css/palettes
 # e>phttps://github.com/monicfenga/base16-styles/tree/master/css
 [params.theme]
-palette = "base16-dark"
+palette = "tokyo-night-dark"
 
 # Sidebar: about/bio
 [params.about]
