@@ -129,7 +129,6 @@ func init() {
 }
 ```
 As you can see there is nothing fancy going on.
-This function will be called by an init() and errors will be handled there.
 
 ![Owl](https://raw.githubusercontent.com/gpr3211/gpr3211.github.io/refs/heads/debuglog/content/post/1/tutorial.jpg)
 
@@ -138,4 +137,4 @@ This function will be called by an init() and errors will be handled there.
 
 
 
- 
+## full code for this post can be found [here](https://github.com/gpr3211/examples-blog/tree/master/p1) 

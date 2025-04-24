@@ -4,10 +4,17 @@
     <title>Welcome to Gopher&#39;s Cove on Gopher&#39;s Cove</title>
     <link>http://localhost:1313/</link>
     <description>Recent content in Welcome to Gopher&#39;s Cove on Gopher&#39;s Cove</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multiple Language Support for ebitenengine in Go.</title>
+      <link>http://localhost:1313/post/1/first/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/1/first/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go !&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Perm debug log for ebiten&#39;s debugui</title>
       <link>http://localhost:1313/post/2/second/</link>
