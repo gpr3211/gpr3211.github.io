@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Text on Gopher&#39;s Cove</title>
-    <link>https://gpr3211.github.io/tags/text/</link>
+    <link>http://localhost:1313/tags/text/</link>
     <description>Recent content in Text on Gopher&#39;s Cove</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gpr3211.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/text/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiple Language Support for ebitenengine in Go.</title>
-      <link>https://gpr3211.github.io/post/first/</link>
+      <link>http://localhost:1313/post/first/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/post/first/</guid>
+      <guid>http://localhost:1313/post/first/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go !&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
