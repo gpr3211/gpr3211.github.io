@@ -130,7 +130,7 @@ func init() {
 ```
 As you can see there is nothing fancy going on.
 
-![Owl](https://raw.githubusercontent.com/gpr3211/gpr3211.github.io/refs/heads/debuglog/content/post/1/tutorial.jpg)
+![Owl](https://raw.githubusercontent.com/gpr3211/gpr3211.github.io/refs/heads/master/content/post/1/tutorial.jpg)
 
 ## 0.2 Text
 We are done with fonts, time to write our text abstraction. Lets start by opening ui/text.go.
@@ -273,6 +273,8 @@ func (g *Game) Draw(screen *ebiten.Image) {
 ```
 Now run the game. 
 The Hello world text should appear.
+
+![hello](https://raw.githubusercontent.com/gpr3211/gpr3211.github.io/refs/heads/master/content/post/1/hello_there.png)
 Part 2 coming soon where we add multiple-lang support and more dynamic values. Hope you enjoyed :)
 
 
