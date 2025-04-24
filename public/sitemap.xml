@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://gpr3211.github.io/categories/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/channels/</loc>
+    <loc>https://gpr3211.github.io/tags/channels/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/debug/</loc>
+    <loc>https://gpr3211.github.io/tags/debug/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ebiten/</loc>
+    <loc>https://gpr3211.github.io/tags/ebiten/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ebiten/</loc>
+    <loc>https://gpr3211.github.io/categories/ebiten/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fonts/</loc>
+    <loc>https://gpr3211.github.io/tags/fonts/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/games/</loc>
+    <loc>https://gpr3211.github.io/categories/games/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/go/</loc>
+    <loc>https://gpr3211.github.io/categories/go/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/golang/</loc>
+    <loc>https://gpr3211.github.io/categories/golang/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/index/</loc>
+    <loc>https://gpr3211.github.io/tags/index/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/maps/</loc>
+    <loc>https://gpr3211.github.io/tags/maps/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/1/first/</loc>
+    <loc>https://gpr3211.github.io/post/1/first/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2/second/</loc>
+    <loc>https://gpr3211.github.io/post/2/second/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://gpr3211.github.io/post/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://gpr3211.github.io/tags/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/text/</loc>
+    <loc>https://gpr3211.github.io/tags/text/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/translations/</loc>
+    <loc>https://gpr3211.github.io/tags/translations/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tutorial/</loc>
+    <loc>https://gpr3211.github.io/categories/tutorial/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://gpr3211.github.io/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url>
 </urlset>
