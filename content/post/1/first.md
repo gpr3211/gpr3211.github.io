@@ -1,8 +1,8 @@
 +++
 author = "P G" 
-title = 'Multiple Language Support for ebitenengine in Go.'
+title = 'Parsing Fonts and Displaying Text in Ebitengine'
 date = 2025-04-13
-description = "A basic tutorial on how to easily support multiple languages in ebitenengine."
+description = "A basic tutorial on how to display text"
 tags = [
     "ebiten",
     "text",
@@ -24,9 +24,8 @@ draft = false
 +++
 # Summary
 
-  * This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc and easily change your entire game language.No time to waste lets go !
+  * This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc .In Part 2 we will explore how to add multi-lang support and more dynamic text.No time to waste lets go !
 <!--more-->
-# COMING SOON
 
 
 ## Requirements
