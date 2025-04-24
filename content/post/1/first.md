@@ -103,6 +103,9 @@ func LoadFont(name string, assets embed.FS) (*text.GoTextFaceSource, error) {
 As you can see there is nothing fancy going on.
 This function will be called by an init() and errors will be handled there.
 
+{{< img src="tutorial.jpg" alt="Tutorial Image" >}}
+
+    
 
 
 
