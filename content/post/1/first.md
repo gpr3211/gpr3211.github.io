@@ -37,8 +37,8 @@ draft = false
 # Intro
 * First we have to load our .ttf font. We will the "embed" stdlib package to emded our font at compile time.
     Then we will create a text abstraction that we can plug in windows/buttos w/e. The final step will be to add the multiple languages map.
-## 0.1 Font.
-* You will need to download a .ttf font file. Since this tutorial is about translations you will have to pick one that supports a wide range of languages. I will be using [Deja Vu Sans](https://www.fontsquirrel.com/fonts/dejavu-sans) for the tutorial.
+## 0.1 Font
+* You will need to download a .ttf font file. Since this tutorial is about translations you will have to pick one that supports a wide range of languages. I will be using [Deja Vu Sans](https://www.fontsquirrel.com/fonts/dejavu-sans) and [Thaleah Fat](https://www.dafont.com/thaleahfat.font)for the tutorial.
 
 ### Embed and load.
 1. Lets begin by creating a ui module from the root of the project and creating an assets folder inide. 
@@ -47,7 +47,7 @@ mkdir ui
 cd ui
 mkdir assets
 ```
-2. Move the .ttf file inside assets folder and create a text.go file in ui dir.
+2. Move the .ttf files inside assets folder and create a text.go and font.go file in ui dir.
 
 ```bash
 .
@@ -56,10 +56,12 @@ mkdir assets
 ├── main.go
 └── ui
     ├── assets
-    │   └── DejaVuSans.ttf
+    │   ├── DejaVuSans.ttf
+    │   └── ThaleahFat.ttf
+    ├── font.go
     └── text.go
 ```
-3. Open ui/text.go using your weapon of choice and add the following: 
+3. Open ui/font.go using your weapon of choice and add the following: 
 ```go
 package ui
 
@@ -73,6 +75,9 @@ import (
 var fontAssets embed.FS
 
 var DejaVuSans *text.GoTextFaceSource
+var ThaleahFat  *text.GoTextFaceSource
+
+var currFont *text.GoTextFaceSouce // we use this to set font inside our future text.Draw method
 
 ```
 - note the fontAssets var MUST be declared on the following line after //go:embed
@@ -100,11 +105,35 @@ func LoadFont(name string, assets embed.FS) (*text.GoTextFaceSource, error) {
 	return s, nil
 }
 ```
+Next add the init function where we set currFont and the fonts.
+```go
+func init() {
+
+	fmt.Println("Loading fonts")
+	tf, err := LoadFont("ThaleahFat", fontAssets)
+	if err != nil {
+		log.Println("Failed to load font")
+		panic(err)
+	}
+	dj, err := LoadFont("DejaVuSans", fontAssets)
+	if err != nil {
+		log.Println("Failed to load font")
+		panic(err)
+	}
+
+	ThaleahFat = tf 
+	DejaVuSans = dj
+
+	currFont = ThaleahFat // set the font to be used later.
+	fmt.Println("Font loaded")
+}
+```
 As you can see there is nothing fancy going on.
 This function will be called by an init() and errors will be handled there.
 
-{{< img src="tutorial.jpg" alt="Tutorial Image" >}}
+![Owl](https://raw.githubusercontent.com/gpr3211/gpr3211.github.io/refs/heads/debuglog/content/post/1/tutorial.jpg)
 
+## 0.2 Text
     
 
 

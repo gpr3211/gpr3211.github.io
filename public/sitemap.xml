@@ -35,10 +35,10 @@
     <loc>http://localhost:1313/tags/maps/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/first/</loc>
+    <loc>http://localhost:1313/post/1/first/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/second/</loc>
+    <loc>http://localhost:1313/post/2/second/</loc>
     <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
