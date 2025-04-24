@@ -148,6 +148,9 @@ type FontSize int
 const NormalFontSize FontSize = 12
 const LargeFontSize FontSize = 16
 
+var ColorWhite = color.RGBA{255, 255, 255, 0}
+var ColorBlack = color.RGBA{0, 0, 0, 1}
+var ColorRed = color.RGBA{223, 10, 17, 1}
 ```
 ```go
 	type Text struct {
