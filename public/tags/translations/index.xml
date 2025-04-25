@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Translations on Gopher&#39;s Cove</title>
-    <link>https://gpr3211.github.io/tags/translations/</link>
+    <link>http://localhost:1313/tags/translations/</link>
     <description>Recent content in Translations on Gopher&#39;s Cove</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gpr3211.github.io/tags/translations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/translations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Parsing Fonts and Displaying Text in Ebitengine</title>
-      <link>https://gpr3211.github.io/post/1/first/</link>
+      <link>http://localhost:1313/post/1/first/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://gpr3211.github.io/post/1/first/</guid>
+      <guid>http://localhost:1313/post/1/first/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This tutorial will show you how to make a text abstraction that you can easily plug in buttons, menus etc .In Part 2 we will explore how to add multi-lang support and more dynamic text.No time to waste lets go !&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

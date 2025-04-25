@@ -18,7 +18,7 @@ categories = [
 series = ["Ebiten Guides"]
 toc = true
 
-draft = false
+draft = true
 +++
 
 # Summary
